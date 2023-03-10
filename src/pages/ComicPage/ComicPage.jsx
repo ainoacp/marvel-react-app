@@ -1,30 +1,29 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import DetailCharacter from "../../components/shared/DetailCharacter/DetailCharacter";
+import DetailComic from "../../components/shared/DetailComic/DetailComic";
 import BackButton from "../../components/shared/BackButton/BackButton";
 import TranslatorNavComponent from "../../components/shared/TranslatorNavComponent/TranslatorNavComponent";
-import './CharacterPage.scss';
 
-export default function CharacterPage() {
-
+export default function ComicPage() {
+    
     let { id } = useParams();
     
-    const [character, setCharacter] = useState(null);
+    const [comic, setComic] = useState(null);
 
-    const url_character = `https://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=c0992becb388f5ce26d640dceb1f1b6f&hash=b950312003836e9279ca37d5917e5d2b`;
+    const url_comic = `https://gateway.marvel.com/v1/public/comics/${id}?ts=1&apikey=c0992becb388f5ce26d640dceb1f1b6f&hash=b950312003836e9279ca37d5917e5d2b`;
 
-    const getCharacter = async () => {
-        const res = await axios.get(url_character);
-        setCharacter(res.data.data.results[0]);
+    const getComic = async () => {
+        const res = await axios.get(url_comic);
+        setComic(res.data.data.results[0]);
         console.log(res.data.data.results[0]);
     }
 
     useEffect(() => {
-        getCharacter();
+        getComic();
     }, [id]);
 
-    if (!character) {
+    if (!comic) {
         return <div>Loading...</div>;
     }
 
@@ -36,8 +35,8 @@ export default function CharacterPage() {
                     <TranslatorNavComponent/>
                 </div>
             </div>
-            <div className="c-character-main">
-                <DetailCharacter character={character} />
+            <div className="c-comic-main">
+                <DetailComic comic={comic} />
             </div>
         </div>
     )

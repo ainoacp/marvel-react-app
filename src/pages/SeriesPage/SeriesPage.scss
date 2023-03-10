@@ -1,11 +1,11 @@
-.c-characters-container{
+.c-series-container{
     background-color: black;
 
     height: 100%;
     // width: 100vw;
 }
 
-.c-characters-header{
+.c-series-header{
     height: 10vh;
     // width: 100vw;
 
@@ -17,7 +17,7 @@
     }
 }
 
-.c-characters-main{
+.c-series-main{
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -31,7 +31,7 @@
     }
 }
 
-.c-characters-footer{
+.c-series-footer{
     height: 15vh;
     width: 100vw; 
     
