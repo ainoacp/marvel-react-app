@@ -7,9 +7,9 @@ export default function NavComponent(){
     const {t} = useContext(Context)
     return (
     <div className="c-nav-container">
-        <Link to="/characters" className="nav-link">{t("characters")}</Link>
-        <Link to="/comics" className="nav-link">{t("comics")}</Link>
-        <Link to="/series" className="nav-link">{t("series")}</Link>
+        <Link to="/marvel/characters" className="nav-link">{t("characters")}</Link>
+        <Link to="/marvel/comics" className="nav-link">{t("comics")}</Link>
+        <Link to="/marvel/series" className="nav-link">{t("series")}</Link>
     </div>
     )
 }
