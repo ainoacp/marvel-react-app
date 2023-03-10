@@ -1,0 +1,17 @@
+.c-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: black;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    &_logo {
+      margin: 0 auto;
+      width: 50%;
+      max-width: 50vw;
+    }
+  }

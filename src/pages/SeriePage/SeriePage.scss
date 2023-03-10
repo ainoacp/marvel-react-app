@@ -1,0 +1,26 @@
+.c-serie-container{
+    height: 100%;
+
+    background-color: black;
+
+    .c-serie-header{
+        height: 10vh;
+    
+        padding: 20px;
+    
+        &_buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    
+    .c-serie-main{
+        height: 85%;
+        color:white;
+        padding: 0px 10vh;
+        // padding-top: 5vh;
+        // display: block;
+    }
+}
+

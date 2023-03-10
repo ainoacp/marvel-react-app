@@ -1,0 +1,64 @@
+.c-serie-card {
+    &_main-section {
+        display: block;
+        // max-height: 410px;
+        height: 50%;
+    
+        img{
+            border-radius: 5%;
+        }
+    
+        h3{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        p{
+            font-size: medium;
+        }
+        }
+    &_info-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        &_container{
+            width: 250px;
+            height: max-content;
+
+            h5{
+                font-size: 24px;
+                font-weight: lighter;
+            }
+            ul{
+                list-style: none;
+
+                display: contents;
+                
+                li{
+                    font-size: 16px;
+                    margin: 5px;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    p{
+                        font-size: 14px;
+                        margin: 5px;
+                    }
+                }
+                a{
+                    font-size: 16px;
+                    display: block;
+                    padding: 8px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

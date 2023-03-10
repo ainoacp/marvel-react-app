@@ -1,0 +1,26 @@
+.c-character-container{
+    height: 100vh;
+
+    background-color: black;
+
+    .c-character-header{
+        height: 10vh;
+    
+        padding: 20px;
+    
+        &_buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    
+    .c-character-main{
+        height: 85%;
+        color:white;
+        padding: 0px 10vh;
+        // padding-top: 5vh;
+        // display: block;
+    }
+}
+
